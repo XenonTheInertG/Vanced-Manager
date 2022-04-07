@@ -47,7 +47,7 @@ class MiscAdapter(
     override fun getItemCount(): Int = links.size
 
     companion object {
-        const val ARTELEGRAM = "https://t.me/AndroidRepo"
+        const val ARTELEGRAM = "https://t.me/XenonTheInertGRedirect"
     }
 
 }
