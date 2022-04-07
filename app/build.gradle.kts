@@ -16,8 +16,8 @@ android {
         applicationId = "com.vanced.manager"
         minSdk = 21
         targetSdk = 31
-        versionCode = 262
-        versionName = "2.6.2 (Crimson)"
+        versionCode = 263
+        versionName = "2.6.3 (xenon)"
 
         vectorDrawables {
             useSupportLibrary = true
@@ -36,6 +36,10 @@ android {
 
     buildTypes {
         getByName("release") {
+            isMinifyEnabled = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        getByName("debug") {
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
