@@ -89,13 +89,13 @@ suspend fun loadJson(context: Context) = withContext(Dispatchers.IO) {
         }
         if (connection.responseCode != 200) {
             log(TAG, latestbaseUrl + ": " + connection.responseCode.toString())
-            baseInstallUrl = "https://gitlab.com/XenonTheInertG/VancedMirror/-/raw/main/api/v1"
+            baseInstallUrl = "https://gitlab.com/XenonTheInertG/Vanced-Mirror/-/raw/main/api/v1"
         }
     } catch (e: IOException) {
-        baseInstallUrl = "https://gitlab.com/XenonTheInertG/VancedMirror/-/raw/main/api/v1"
+        baseInstallUrl = "https://gitlab.com/XenonTheInertG/Vanced-Mirror/-/raw/main/api/v1"
     } catch (e: SocketTimeoutException) {
         log(TAG, "connection timed out")
-        baseInstallUrl = "https://gitlab.com/XenonTheInertG/VancedMirror/-/raw/main/api/v1"
+        baseInstallUrl = "https://gitlab.com/XenonTheInertG/Vanced-Mirror/-/raw/main/api/v1"
     }
 
     log(TAG, "Fetching using URL: $baseInstallUrl")
@@ -144,4 +144,4 @@ fun checkSHA256(sha256: String, updateFile: File): Boolean {
     }
 }
 
-const val baseUrl = "https://raw.githubusercontent.com/XenonTheInertG/VancedMirror/main/api/v1"
+const val baseUrl = "https://raw.githubusercontent.com/XenonTheInertG/Vanced-Mirror/main/api/v1"
