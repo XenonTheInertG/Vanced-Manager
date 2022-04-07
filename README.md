@@ -39,7 +39,7 @@ For anyone who wants to provide translations please submit them to this [link](h
 
 <div>
 
-[![Build](https://github.com/XenonTheInertG/VancedManager/actions/workflows/debug.yml/badge.svg?branch=dev)](https://github.com/XenonTheInertG/VancedManager/actions/workflows/debug.yml)
+[![Vanced-installer build](https://github.com/XenonTheInertG/Vanced-Manager/actions/workflows/debug.yml/badge.svg)](https://github.com/XenonTheInertG/Vanced-Manager/actions/workflows/debug.yml)
 
 </div>
 
